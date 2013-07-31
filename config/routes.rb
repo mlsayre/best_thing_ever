@@ -1,15 +1,7 @@
 BestThingEver::Application.routes.draw do
   get "app/welcome"
 
-  get "app/question1"
-
-  get "app/question2"
-
-  get "app/question3"
-
-  get "app/question4"
-
-  get "app/question5"
+  get "app/questions"
 
   get "app/result"
 
