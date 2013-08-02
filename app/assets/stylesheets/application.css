@@ -30,7 +30,7 @@ h2
 {
 text-align:center;
 font-size:40px;
-color:#303030;
+color:green;
 }
 h3
 {
@@ -53,9 +53,9 @@ p.ex
 
 p2
 {
-color:black;
+color:green;
 font-family:Arial, Helvetica, sans-serif;
-font-size:18px;
+font-size:24px;
 }
 
 p3

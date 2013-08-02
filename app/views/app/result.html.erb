@@ -1,2 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Best Thing Ever</title>
+    <%= stylesheet_link_tag    "application", :media => "all" %>
+    <%= csrf_meta_tags %>
+  </head>
+<body>
+	
 <h1>The Results:</h1>
-<p>Your BTEI (Best Thing Ever Index) of ## means you think the Best Thing Ever is:</p>
+<p>Thank you for your answers, <%= params[:user] %>.<br>Your BTEI (Best Thing Ever Index) of <%= score = params[:stop].to_i + params[:peace].to_i + params[:events].to_i + params[:talk].to_i + params[:pigs].to_i %> means you think the Best Thing Ever is:</p>
+
+<h2>
+	<%= if score == 5
+			"GPS."
+		elsif score == 6
+			"The printing press."
+		elsif score == 7
+			"The first snow of the year."
+		elsif score == 8
+			"A tuned piano."
+		elsif score == 9
+			"Basketball."
+		elsif score == 10
+			"The back scratcher."
+		elsif score == 11
+			"The trampoline."
+		elsif score == 12
+			"The American sewer system."
+		elsif score == 13
+			"A healthy fear of clowns."
+		elsif score == 14
+			"A free upgrade to First Class."
+		elsif score == 15
+			"The moving picture."
+		elsif score == 16
+			"Civilization (the computer game)."
+		elsif score == 17
+			"Chocolate milk."
+		elsif score == 18
+			"The modern toupee."
+		elsif score == 19
+			"A dropped glass that doesn't break."
+		elsif score == 20
+			"Sleepy kittens."
+		elsif score == 21
+			"The inconsequential dentist visit."
+		elsif score == 22
+			"The computing machine."
+		elsif score == 23
+			"A bullfighter with hiccups."
+		elsif score == 24
+			"Getting the highest score in Galaga."
+		elsif score == 25
+			"Listening to thunder while safe under the covers. Also, you are a billionaire."
+		end
+%>
+</h2>
+
+<p><a href="questions" target ="_self">Try again?</a></p>
+
+
+
+
+</body>
